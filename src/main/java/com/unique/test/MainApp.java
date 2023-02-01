@@ -1,19 +1,16 @@
 package com.unique.test;
 
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
-import org.junit.runner.notification.Failure;
-
-import com.unique.main.testApp;
 
 public class MainApp {
+	public int calsi(int p, int r, int n)
+	{
+		int si = (p*r*n)/100;
+		System.out.println("This is Simple interest : " + si);
+		return si;
+	}
+	
 	public static void main(String[] args) {
-		  Result result = JUnitCore.runClasses(testApp.class);
-			
-	      for (Failure failure : result.getFailures()) {
-	         System.out.println(failure.toString());
-	      }
-			
-	      System.out.println(result.wasSuccessful());
+		  MainApp ma = new MainApp();
+		  ma.calsi(5000, 12, 3);
 	}
 }
