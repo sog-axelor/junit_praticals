@@ -13,4 +13,4 @@ public  class test {
 	    collector.addError(new Throwable("first thing went wrong"));
 	    collector.addError(new Throwable("second thing went wrong"));
 	  }
-	}
+	}	
